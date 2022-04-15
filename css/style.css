@@ -1,0 +1,200 @@
+* {
+    margin: 0;    
+    font-family: 'Anek Tamil', sans-serif;
+    font-size: 26px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Style the navbar */
+#logo {
+    display: block;
+    float: left;
+}
+#logo a {
+    font-family: 'Pacifico', cursive;
+    color: #2D2C3F;
+    font-size: 50px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#logo a:hover {
+    color: #6370b8;
+}
+#header-menu {
+    overflow: hidden;
+  }
+
+#navigation {
+    float: right;
+    margin: 0;
+}
+
+/* Navbar links */
+#navigation li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    }
+nav a {
+    text-decoration: none;
+    color: #2D2C3F;
+    transition-duration: 0.5s;
+    }
+nav a:hover {
+    color: #6370b8;
+}
+
+
+header {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(../images/header_background.png);
+    background-size: cover;
+    background-position: center;
+    color: #2D2C3F;
+    position: relative;
+    }
+
+header h1 {
+    font-size: 140px;
+    text-align: center;
+    padding-top: 3em;
+}
+
+#roles span {
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+#get-in-touch {
+    margin: auto;
+    text-align: center;
+}
+#get-in-touch button {
+    padding: 5px 3em;
+    border: 2px solid #49517C;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-duration: 0.5s;
+    }
+#get-in-touch * {
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 32px;
+    }
+
+#get-in-touch i {
+    padding: 5px;
+}
+
+#get-in-touch button:hover {
+    cursor: pointer;
+    box-shadow:0 0 30px #302F47;
+    border-radius: 5px;
+    background-color: rgba(48, 46, 67, 0.3);
+}
+#get-in-touch button:active{
+    background-color: #302F47;
+}
+
+#networks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    justify-content: center;
+    padding-top: 5em;
+}
+
+#networks i {
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.9);
+    }
+
+#networks i:hover {
+    color: white;
+    text-shadow:0 0 20px rgb(130, 205, 248);
+    border-radius: 50%;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2E2D41;
+    height: 3em;
+}
+.sticky a {
+    color: #F7DBD4;
+}
+.sticky #logo a {
+    color: #F7DBD4;
+}
+    
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .cont {
+    padding-top: 60px;
+    } 
+
+
+
+/* --------------------------------- ABOUT section -----------------------------*/
+
+h2 {
+    text-align: center;
+    font-size: 44px;
+}
+h2 i {
+    font-size: 38px;
+    padding-right: 10px;
+}
+#about p {
+    font-size: 18px;
+}
+
+/* --------------------------------- PROJECTS section -----------------------------*/
+
+#projects {
+    background-color: #fff4ee;
+}
+
+#projects .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#projects h2 {
+    flex: 1 100%;
+}
+#projects .project-card {
+    flex: 1 1 0px;
+    margin: auto;
+}
+#projects img {
+    height: 100px;
+}
+
+
+/* -----------------------------     CV section       -----------------------------*/
+
+
+
+/* --------------------------------- COMPETETIONS section --------------------------*/
+#competitions {
+    background-color: #fff4ee;
+}
+
+/* --------------------------------- FOOTER section -----------------------------*/
+
+#footer {
+    font-size: 14px;
+    background-color: #2E2D41;
+    color: #F7DBD4;
+}

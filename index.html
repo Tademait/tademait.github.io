@@ -7,15 +7,15 @@
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200;500&display=swap" rel="stylesheet">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">  
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<script>
-			// vlozte pripadne simple skripty sem
-		</script>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body id="body">
 		<header id="header">
-			<div class="content">
+			<div>
 				<div id="header-menu">
 					<div id="logo">
 						<span><a href="index.html">TKozub</a></span>
@@ -24,20 +24,25 @@
                     
 					<nav id="navigation">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html#services">About</a></li>
-							<li><a href="index.html#about">Projects</a></li>
-							<li><a href="index.html#team">CV</a></li>
-							<li><a href="index.html#price">Competetions</a></li>
+							<li><a href="index.html#body">Home</a></li>
+							<li><a href="index.html#about">About</a></li>
+							<li><a href="index.html#projects">Projects</a></li>
+							<li><a href="index.html#CV">CV</a></li>
+							<li><a href="index.html#competitions">Competitions</a></li>
 						</ul>
 					</nav>
 				</div>
 				<div id="header-title">
-                    <div class="roles">
-                        <p>tester / programmer</p>
+                    <div id="roles">
+                        <span>tester / programmer</span>
                     </div>
 					<h1>Tadeáš Kozub</h1>
-					<button><span id="mail"><i class="fas fa-envelope-square"></i><a href="mailto:tadeas.kozub@gmail.com">Get in Touch</a></span></button>
+					<div id="get-in-touch">
+						<a href="mailto:tadeas.kozub@gmail.com">
+							<button> <span id="mail"><i class="fas fa-envelope-square"></i>Get in Touch</span></button>
+							
+						</a>
+					</div>
 				</div>
                 <div id="networks">
                     <span id="github"><a href="https://www.github.com"><i class="fab fa-github"></i></a></span>
@@ -46,41 +51,40 @@
                 </div>
 			</div>
 		</header>
-		<main>
+		<main class="cont">
 			<section id="about">
 				<div class="content">
-					<h2>About me</h2>
-                    <span class="code"><i class="fa-solid fa-code"></i></span>
+					<h2><i class="fa-solid fa-code"></i>About me</h2>
 					<p>Incididunt nulla duis ex aliquip consequat amet proident laboris fugiat commodo consequat sit. Voluptate elit nisi velit elit. Elit officia consectetur sit dolor laboris amet cillum enim enim voluptate ex cillum. Eu nostrud et tempor pariatur incididunt pariatur laborum dolor culpa adipisicing sint.</p>	
 				</div>
 			</section>
 			<section id="projects">
 				<div class="content">
-					<h2>Projects</h2>
+					<h2><i class="fa-solid fa-code"></i>Projects</h2>
 					<div class="project-card">
-						<img src="images/proj1.jpg" alt="First project">
+						<img src="images/astar.PNG" alt="First project">
 						<h3>?project_name?</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.</p>
 					</div>
                     <div class="project-card">
-						<img src="images/proj2.jpg" alt="Second project">
+						<img src="images/astar.PNG" alt="Second project">
 						<h3>?project_name?</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.</p>
 					</div>
                     <div class="project-card">
-						<img src="images/proj3.jpg" alt="Third project">
+						<img src="images/astar.PNG" alt="Third project">
 						<h3>?project_name?</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.</p>
 					</div>
                     <div class="project-card">
-						<img src="images/proj4.jpg" alt="Fourth project">
+						<img src="images/astar.PNG" alt="Fourth project">
 						<h3>?project_name?</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.</p>
 					</div>
 				</div>
 			</section>
             <section id="CV">
-                <h2>Curriculum vitæ</h2>
+                <h2><i class="fa-solid fa-code"></i>Curriculum vitæ</h2>
                 <nav id="cv-subnavigation">
                     <ul>
                         <li><a href="index.html#cv-school">School and studies</a></li>
@@ -105,7 +109,7 @@
                 </div>
             </section>
             <section id="competitions">
-                <h2>Competetions</h2>
+                <h2><i class="fa-solid fa-code"></i>Competetions</h2>
                 <ul>
                     <li>Dolor eu ipsum aute qui elit voluptate duis ullamco qui.</li>
                     <li>Minim deserunt occaecat reprehenderit esse Lorem minim minim elit magna velit incididunt.</li>
@@ -119,5 +123,6 @@
 			</div>
 		</footer>
 	</body>
+	<script src="scripts/sticky_navbar.js"></script>
 </html>
 
