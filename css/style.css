@@ -26,7 +26,7 @@ h2 {
 #logo a {
     font-family: 'Pacifico', cursive;
     color: #2D2C3F;
-    font-size: 50px;
+    font-size: 30px;
     text-decoration: none;
     transition-duration: 0.5s;
 }
@@ -35,6 +35,7 @@ h2 {
 }
 #header-menu {
     overflow: hidden;
+    padding: 10px;
   }
 
 #navigation {
@@ -57,6 +58,7 @@ nav a {
     color: #2D2C3F;
     transition-duration: 0.5s;
     font-weight: bold;
+    font-size: 20px;
     }
 nav a:hover {
     color: #6370b8;
@@ -65,7 +67,7 @@ nav a:hover {
 
 header {
     height: 100vh;
-    min-height: 500px;
+    min-height: 900px;
     background-image: url(../images/header_background.png);
     background-size: cover;
     background-position: center;
@@ -85,10 +87,12 @@ header h1 {
     left: 30%;
     top: 25%;
     font-weight: lighter;
+    font-size: 28px;
 }
 #get-in-touch {
     margin: auto;
     text-align: center;
+    font-weight: lighter;
 }
 #get-in-touch button {
     padding: 5px 3em;
@@ -110,10 +114,19 @@ header h1 {
 
 #get-in-touch button:hover {
     cursor: pointer;
-    box-shadow:0 0 30px #302F47;
+    box-shadow:0 0 20px rgb(130, 205, 248);
     border-radius: 5px;
-    background-color: rgba(48, 46, 67, 0.3);
+    background-color: rgba(255, 255, 255, 0.6);
 }
+
+#get-in-touch button:hover span {
+    color: #3A3B59;
+}
+
+#get-in-touch button:hover i {
+    color: #3A3B59;
+}
+
 #get-in-touch button:active{
     background-color: #302F47;
 }
@@ -155,7 +168,7 @@ header h1 {
 }
     
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .cont {
+.sticky + .content {
     padding-top: 60px;
     } 
 
@@ -281,3 +294,8 @@ h2 i {
     color: #F7DBD4;
     text-align: center;
 }
+
+#about, #projects, #cv, #competitions {
+    padding-top: 60px;
+    margin-top: -60px;
+    }
