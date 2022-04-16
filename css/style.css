@@ -1,12 +1,22 @@
 * {
     margin: 0;    
     font-family: 'Anek Tamil', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
   }
+.content {
+    width: 80%;
+    padding: 1em 1em 5em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 44px;
+    padding: 10px 0px;
+}
 
 /* Style the navbar */
 #logo {
@@ -39,10 +49,14 @@ html {
     text-align: center;
     padding: 0 10px;
     }
+#navigation li:hover {
+    background-color: rgba(185, 177, 205, 0.2);
+    }
 nav a {
     text-decoration: none;
     color: #2D2C3F;
     transition-duration: 0.5s;
+    font-weight: bold;
     }
 nav a:hover {
     color: #6370b8;
@@ -63,12 +77,14 @@ header h1 {
     font-size: 140px;
     text-align: center;
     padding-top: 3em;
+    font-weight: bold;
 }
 
 #roles span {
     position: absolute;
     left: 30%;
     top: 25%;
+    font-weight: lighter;
 }
 #get-in-touch {
     margin: auto;
@@ -129,6 +145,7 @@ header h1 {
     width: 100%;
     background-color: #2E2D41;
     height: 3em;
+    transition-duration: 0.5s;
 }
 .sticky a {
     color: #F7DBD4;
@@ -146,16 +163,31 @@ header h1 {
 
 /* --------------------------------- ABOUT section -----------------------------*/
 
-h2 {
-    text-align: center;
-    font-size: 44px;
-}
+
 h2 i {
     font-size: 38px;
     padding-right: 10px;
 }
+.content {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    margin: auto;
+    
+}
 #about p {
     font-size: 18px;
+    padding-top: 2em;
+}
+
+#about img {
+    width: 15%;
+    margin: 0em 4em 1em 1em;
+    float: left;
+    
 }
 
 /* --------------------------------- PROJECTS section -----------------------------*/
@@ -178,18 +210,68 @@ h2 i {
     margin: auto;
 }
 #projects img {
-    height: 100px;
+    width: 100%;
+    display: block;
+}
+#projects .img-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+#projects h3 {
+    text-align: center;
+}
+
+#projects a {
+    text-decoration: none;
+    color: #2E2D41;
+}
+
+#projects p {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    color: #2E2D41;
+    font-size: 16px;
+    padding-top: 1em;
 }
 
 
 /* -----------------------------     CV section       -----------------------------*/
+#cv-subnav {
+    height: 1.2em;
+    background-color: #8990b8;
+}
+#cv-subnav li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+}
 
-
-
+#cv h3 {
+    clear: both;
+    margin: .5em 0em;
+}
+#cv .chosen-cv {
+    background-color: #49517C;
+}
+#cv .chosen-cv a{
+    color: white;
+}
+#cv-content {
+    margin-top: 1em;
+}
+#cv-subnav a:hover {
+    color: white;
+}
 /* --------------------------------- COMPETETIONS section --------------------------*/
 #competitions {
     background-color: #fff4ee;
 }
+#competitions a {
+    text-decoration: none;
+} 
 
 /* --------------------------------- FOOTER section -----------------------------*/
 
@@ -197,4 +279,5 @@ h2 i {
     font-size: 14px;
     background-color: #2E2D41;
     color: #F7DBD4;
+    text-align: center;
 }

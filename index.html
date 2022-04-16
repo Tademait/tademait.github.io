@@ -11,7 +11,6 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">  
 		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body id="body">
 		<header id="header">
@@ -55,74 +54,96 @@
 			<section id="about">
 				<div class="content">
 					<h2><i class="fa-solid fa-code"></i>About me</h2>
-					<p>Incididunt nulla duis ex aliquip consequat amet proident laboris fugiat commodo consequat sit. Voluptate elit nisi velit elit. Elit officia consectetur sit dolor laboris amet cillum enim enim voluptate ex cillum. Eu nostrud et tempor pariatur incididunt pariatur laborum dolor culpa adipisicing sint.</p>	
+					<div id="img-wrapper">
+						<img src="images/personal_pic.jpg" alt="personal_pic_mountains">
+					</div>
+					<p>Incididunt nulla duis ex aliquip consequat amet proident laboris fugiat commodo consequat sit. Voluptate elit nisi velit elit. Elit officia consectetur sit dolor laboris amet cillum enim enim voluptate ex cillum. Eu nostrud et tempor pariatur incididunt pariatur laborum dolor culpa adipisicing sint.
+						Ea labore et sint tempor deserunt sit Lorem occaecat ipsum minim culpa eu non. Excepteur proident cillum ad do consectetur aliqua velit excepteur dolore ad dolore enim. Minim pariatur magna voluptate ea adipisicing minim mollit minim deserunt dolore esse. Ipsum laboris labore exercitation culpa consequat ullamco sunt est voluptate.
+					</p>
+
+					<p>Do ad laboris veniam esse excepteur labore minim laborum irure. Elit nostrud dolor consequat ipsum minim sunt consequat tempor enim pariatur consequat dolor reprehenderit velit. Aliquip voluptate sunt exercitation pariatur consequat et commodo. Sint qui et et duis amet pariatur esse velit incididunt do.
+						Officia consectetur velit pariatur sint aliqua id incididunt dolor irure dolor do est. Anim deserunt anim laboris id. Cillum tempor est cillum laboris id et ipsum minim velit officia nisi. Voluptate sunt exercitation id qui. Adipisicing enim officia culpa non ea Lorem. Cillum amet cillum fugiat elit consectetur. Enim proident mollit laboris et fugiat qui cupidatat officia occaecat in occaecat mollit consectetur sit.
+					</p>
 				</div>
 			</section>
 			<section id="projects">
 				<div class="content">
 					<h2><i class="fa-solid fa-code"></i>Projects</h2>
 					<div class="project-card">
-						<img src="images/astar.PNG" alt="First project">
-						<h3>?project_name?</h3>
+						<div class="img-wrapper"><img src="images/astar.PNG" alt="First project"></div>
+						<h3><a href="https://github.com">?project_name?</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.</p>
 					</div>
                     <div class="project-card">
-						<img src="images/astar.PNG" alt="Second project">
-						<h3>?project_name?</h3>
+						<div class="img-wrapper"><img src="images/astar.PNG" alt="Second project"></div>
+						<h3><a href="https://github.com">?project_name?</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.</p>
 					</div>
                     <div class="project-card">
-						<img src="images/astar.PNG" alt="Third project">
-						<h3>?project_name?</h3>
+						<div class="img-wrapper"><img src="images/astar.PNG" alt="Third project"></div>
+						<h3><a href="https://github.com">?project_name?</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.</p>
 					</div>
                     <div class="project-card">
-						<img src="images/astar.PNG" alt="Fourth project">
-						<h3>?project_name?</h3>
+						<div class="img-wrapper"><img src="images/astar.PNG" alt="Fourth project"></div>
+						<h3><a href="https://github.com">?project_name?</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum accumsan lacus sed volutpat.</p>
 					</div>
 				</div>
 			</section>
-            <section id="CV">
-                <h2><i class="fa-solid fa-code"></i>Curriculum vitæ</h2>
-                <nav id="cv-subnavigation">
-                    <ul>
-                        <li><a href="index.html#cv-school">School and studies</a></li>
-                        <li><a href="index.html#cv-work">Work</a></li>
-                    </ul>   
-                </nav>
-                <div id="cv-content">
-                    <div id="cv-school">
-                        <h3>School and studies</h3>
-                        <ul>
-                            <li>Consectetur in exercitation enim dolor duis magna ullamco.</li>
-                            <li>Consectetur in exercitation enim dolor duis magna ullamco.</li>
-                        </ul>
-                    </div>
-                    <div id="cv-work">
-                        <h3>School and studies</h3>
-                        <ul>
-                            <li>Consectetur in exercitation enim dolor duis magna ullamco.</li>
-                            <li>Consectetur in exercitation enim dolor duis magna ullamco.</li>
-                        </ul>
-                    </div>
-                </div>
+            <section id="cv">
+                <div class="content">
+					<h2><i class="fa-solid fa-code"></i>Curriculum vitæ</h2>
+					<nav id="cv-subnav">
+						<ul>
+							<li id="opt1"><a href="index.html#cv-school" onclick="show_school()">School and studies</a></li>
+							<li id="opt2"><a href="index.html#cv-work" onclick="show_work()">Work</a></li>
+						</ul>
+					</nav>
+					<div id="cv-content">
+						<div id="cv-school">
+							<h3>Duis proident adipisicing</h3>
+							<ul>
+								<li>Consectetur in exercitation enim dolor duis magna ullamco.</li>
+								<li>Eu nisi qui do duis proident adipisicing proident Lorem non aliquip cillum sunt incididunt.</li>
+							</ul>
+							<h3>Hmura un golia</h3>
+							<ul>
+								<li>Mollit voluptate consectetur ullamco veniam irure occaecat consectetur proident do ut ad.</li>
+								<li>Eiusmod do deserunt dolore fleem consequat.</li>
+							</ul>
+						</div>
+						<div id="cv-work">
+							<h3>Dolor esse nons</h3>
+							<ul>
+								<li>Fugiat tempor proident minim id proident dolor esse non nostrud qui nulla.</li>
+								<li>Eiusmod do consectetur deserunt dolore reprehenderit consequat.</li>
+							</ul>
+							<h3>Yea es pepeg</h3>
+							<ul>
+								<li>Fugiat tempor proident minim id proident dolor kolin non floupin qui nulla.</li>
+								<li>Eiusmod do deserunt dolore fleem consequat.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
             </section>
             <section id="competitions">
-                <h2><i class="fa-solid fa-code"></i>Competetions</h2>
-                <ul>
-                    <li>Dolor eu ipsum aute qui elit voluptate duis ullamco qui.</li>
-                    <li>Minim deserunt occaecat reprehenderit esse Lorem minim minim elit magna velit incididunt.</li>
-                </ul>
-
+                <div class="content">
+					<h2><i class="fa-solid fa-code"></i>Competitions</h2>
+					<ul class="fa-ul">
+						<li><span class="fa-li"><i class="fa-solid fa-flag"></i></span>Dolor eu ipsum aute qui elit voluptate duis ullamco qui 2018.</li>
+						<li><span class="fa-li"><i class="fa-solid fa-flag"></i></span>Minim deserunt occaecat reprehenderit esse Lorem minim minim elit magna velit incididunt 2019.</li>
+						<li><span class="fa-li"><i class="fa-solid fa-flag"></i></span><a href="https://gjak.cz/best-in-english-2">Best in English 2019</a></li>
+					</ul>
+				</div>
             </section>
         </main>
 		<footer id="footer">
-			<div class="content">
-				<span>©Copyright 2022 | Tadeáš Kozub</span>
-			</div>
+				<span>© Copyright 2022 | Tadeáš Kozub</span>
 		</footer>
 	</body>
 	<script src="scripts/sticky_navbar.js"></script>
+	<script src="scripts/cv_switch_cards.js"></script>
 </html>
 
