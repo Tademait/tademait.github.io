@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Tadeáš Kozub | IT Student's Personal Profile</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -28,6 +29,17 @@
 							<li><a href="index.html#projects">Projects</a></li>
 							<li><a href="index.html#cv">CV</a></li>
 							<li><a href="index.html#competitions">Competitions</a></li>
+						</ul>
+					</nav>	
+				</div>
+				<div id="mobile-nav-wrapper">
+					<nav id="mobile-nav">
+						<ul>
+							<li><a href="index.html#body"><i class="fa-solid fa-house"></i></a></li>
+							<li><a href="index.html#about"><i class="fa-solid fa-circle-info"></i></a></li>
+							<li><a href="index.html#projects"><i class="fa-solid fa-list-check"></i></a></li>
+							<li><a href="index.html#cv"><i class="fa-solid fa-graduation-cap"></i></a></li>
+							<li><a href="index.html#competitions"><i class="fa-solid fa-trophy"></i></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -93,11 +105,11 @@
 			</section>
             <section id="cv">
                 <div class="content">
-					<h2><i class="fa-solid fa-code"></i>Curriculum vitæ</h2>
+					<h2><i class="fa-solid fa-code"></i>CV</h2>
 					<nav id="cv-subnav">
 						<ul>
-							<li id="opt1"><a href="index.html#cv-school" onclick="show_school()">School and studies</a></li>
-							<li id="opt2"><a href="index.html#cv-work" onclick="show_work()">Work</a></li>
+							<a onclick="show_school()"><li id="opt1"><span>School and studies</span></li></a>
+							<a onclick="show_work()"><li id="opt2"><span>Work and jobs</span></li></a>
 						</ul>
 					</nav>
 					<div id="cv-content">
