@@ -160,7 +160,7 @@ header h1 {
     border-radius: 50%;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/* The sticky class is added to the navbar using JavaScript */
 .sticky {
     position: fixed;
     top: 0;
@@ -176,7 +176,6 @@ header h1 {
     color: #F7DBD4;
 }
     
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
     padding-top: 60px;
     } 
