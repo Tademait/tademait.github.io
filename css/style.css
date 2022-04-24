@@ -10,6 +10,8 @@
     display: none;
 }
 
+/* set scrolling to smooth and set the offset so that the sticky navbar
+doesnt cover the header text */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 60px;
@@ -29,12 +31,6 @@ h2 {
 h2>i {
     color: #49517C;
 }
-
-/* offset the page when scrolling to anchor */
-/* section {
-    margin-top: -60px;
-    padding-top: 60px;
-} */
 
 /* Style the navbar */
 #logo {
@@ -98,6 +94,7 @@ nav a:hover {
 
 header {
     height: 100vh;
+    /* lowres image loads up first in case of a slow device / connection speed */
     background-image: url(../images/header_background.jpg), url(../images/header_background_lowres.jpg);
     background-size: cover;
     background-position: center;
@@ -233,11 +230,6 @@ h2 i {
 }
 
 .content {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
     overflow: hidden;
     margin: auto;
 
@@ -331,6 +323,7 @@ h2 i {
     margin: .5em 0em;
 }
 
+/* style for the currently shown submenu (School vs work) */
 #cv .chosen-cv {
     color: white;
     background-color: #49517C;
@@ -433,7 +426,6 @@ h2 i {
     #mobile-nav i {
         flex: 1 1 100%;
         padding: 1em;
-        /* padding: 1em; */
     }
 
     header {
@@ -505,7 +497,7 @@ h2 i {
         padding: .3em 1.5em;
     }
 }
-
+/* responsive design for medium width devices  */
 @media screen and (min-width: 800px) and (max-width: 1500px) {
     #projects .project-card {
         flex: 1 1 50%;

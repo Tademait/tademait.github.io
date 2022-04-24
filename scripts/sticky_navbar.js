@@ -1,15 +1,16 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+// When the user scrolls the page, execute showStickyBar
+window.onscroll = function() {showStickyBar()};
 
 // Get the navbar
 var navbar = document.getElementById("header-menu");
 var header = document.getElementById("header");
 
-// Get the offset position of the navbar
+// Set the navbar hiding /showing position to half of the header
 var sticky = header.clientHeight / 2;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+// Add the sticky class to the navbar when you reach its scroll position. 
+// Remove class "sticky" when you leave the scroll position
+function showStickyBar() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
