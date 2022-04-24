@@ -513,3 +513,26 @@ h2 i {
         display: none;
     }
 }
+
+
+
+.wave-pink svg, .wave-purple svg {
+    position: relative;
+    display: block;
+    width: calc(106% + 1.3px);
+    height: 78px;
+    transform: rotateY(0deg);
+}
+
+.wave-purple svg {
+    transform: rotateY(180deg);
+}
+
+.wave-pink {
+    fill: #e9b49b;
+}
+
+.wave-purple {
+    fill: #46445B;
+
+}
