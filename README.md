@@ -5,4 +5,4 @@ My personal website: [tademait.github.io](https://tademait.github.io)
 
 + adjust top padding of Projects and Compets sections
 + adjust img wrapping on lower screen widths
-+ fix html errors - <a><li>... and <a> inside <button>
++ fix html errors - ali... and a inside button
