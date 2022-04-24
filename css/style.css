@@ -12,6 +12,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 60px;
 }
 
 .content {
@@ -30,10 +31,10 @@ h2>i {
 }
 
 /* offset the page when scrolling to anchor */
-section {
+/* section {
     margin-top: -60px;
     padding-top: 60px;
-}
+} */
 
 /* Style the navbar */
 #logo {
@@ -135,7 +136,9 @@ header h1 {
     font-weight: lighter;
 }
 
-#get-in-touch button {
+#get-in-touch #button {
+    display: inline;
+    padding: .3em 4em;
     border: 2px solid #49517C;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -158,22 +161,22 @@ header h1 {
     padding: 5px;
 }
 
-#get-in-touch button:hover {
+#get-in-touch #button:hover {
     cursor: pointer;
     box-shadow: 0 0 20px rgb(130, 205, 248);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-#get-in-touch button:hover a {
+#get-in-touch #button:hover span {
     color: #3A3B59;
 }
 
-#get-in-touch button:hover i {
+#get-in-touch #button:hover i {
     color: #3A3B59;
 }
 
-#get-in-touch button:active {
+#get-in-touch #button:active {
     background-color: #302F47;
 }
 
@@ -378,6 +381,10 @@ h2 i {
         display: none;
     }
 
+    html {
+        scroll-padding-top: 0;
+    }
+
     #header-menu {
         margin: auto;
         width: 6em;
@@ -429,6 +436,9 @@ h2 i {
         /* padding: 1em; */
     }
 
+    header {
+        min-height: 800px;
+    }
 
     header h1 {
         font-size: 3rem;
@@ -436,7 +446,9 @@ h2 i {
     }
 
     #about img {
-        margin: 2em 0;
+        margin: 0;
+        min-width: 0;
+        width: 100%;
     }
 
     .content h2 {
@@ -455,10 +467,10 @@ h2 i {
 
     #cv-subnav span {
         display: inline-block;
-        margin-top: .8em;
+        margin-top: .5em;
     }
 
-    #cv-subnav a:nth-child(2) span {
+    #cv-subnav li:nth-child(2) span {
         display: inline-block;
         margin-top: 1.3em;
     }
@@ -466,6 +478,7 @@ h2 i {
     #cv-subnav a {
         font-size: 25px;
         text-align: center;
+        padding: 3em 0em;
     }
 
     #projects .project-card {
@@ -488,7 +501,7 @@ h2 i {
         width: 80%;
     }
 
-    #get-in-touch button {
+    #get-in-touch #button {
         padding: .3em 1.5em;
     }
 }
@@ -499,7 +512,7 @@ h2 i {
     }
 
     #about img {
-        margin: 2em;
+        margin: 0 2em 2em 2em;
     }
 }
 
