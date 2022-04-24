@@ -404,6 +404,7 @@ h2 i {
         bottom: 0;
         background-color: white;
         height: 2.8em;
+        z-index: 10000;
     }
 
     #mobile-nav ul {
@@ -523,6 +524,8 @@ h2 i {
     width: calc(106% + 1.3px);
     height: 78px;
     transform: rotateY(0deg);
+    position: relative;
+    z-index: 1;
 }
 
 .wave-purple svg {
